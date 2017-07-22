@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Lower or Upper Case</title>
+</head>
+<body>
+    <script>
+
+     var myString = "I Don't Care About Case";
+     
+     if(myString.toLowerCase()== "i don't care about case"){
+	 
+		alert("Who cares about cases?");
+		
+	 }
+	 
+	 if(myString.toUpperCase()== "I DON'T CARE ABOUT CASE"){
+	 
+	    alert("ME TOO");
+	 }
+    </script>
+</body>
+</html>
