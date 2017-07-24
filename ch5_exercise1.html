@@ -1,0 +1,22 @@
+<! DOCTYPE HTML>
+<html lang = "en">
+
+<head>
+<title>Chapter 5, Exercise 1</title>
+</head>
+
+<body>
+    <script>
+	    var months = ["January", "February", "March", "April", "May", "June", "July","August", "September", "October", "November", "December"];
+		var dateNow = new Date();
+	
+		
+		dateNow.setMonth(dateNow.getMonth()+12);
+		
+		document.write("Date 12 months ahead is " + dateNow.getDate()+ " " + months[dateNow.getMonth()] + " " + dateNow.getFullYear());
+
+    
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<! DOCTYPE HTML>
+<html lang = "en">
+
+<head>
+<title>Chapter 5, Exercise 2 </title>
+</head>
+
+<body>
+    <script>
+	
+		var inputName = " ";
+		var namesArray = [ ];
+		
+		while((inputName=prompt("Enter a name", " ")) != " "){
+		
+	    namesArray[namesArray.length] = inputName;
+		
+		}
+		
+		namesArray.sort();
+		namesArray.reverse();
+		var namesList = namesArray.join("<br/>");
+		document.write(namesList);
+		
+		
+	
+    </script>
+
+</body>
+</html>
