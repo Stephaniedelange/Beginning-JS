@@ -1,0 +1,25 @@
+<! DOCTYPE HTML>
+<html lang = "en">
+
+<head>
+<title>Chapter 7, Exercise2</title>
+</head>
+
+<body>
+    <div id = "output"></div>
+    <script>
+        function updateTime() {
+		    var timeNow = new Date();
+			var value = timeNow.toLocaleTimeString() ; //仅显示时分秒
+			//var value = timeNow.getHours()+ " : "+timeNow.getMinutes() +" : "+ timeNow.getSeconds();
+		    document.getElementById("output").innerHTML = value;
+		
+		}
+		
+		setInterval(updateTime,1000);
+
+    
+    </script>
+
+</body>
+</html>

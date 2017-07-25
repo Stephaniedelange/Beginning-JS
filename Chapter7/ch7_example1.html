@@ -1,0 +1,39 @@
+<! DOCTYPE HTML>
+<html lang = "en">
+
+<head>
+<title>Chapter 7, Example1</title>
+</head>
+
+<body>
+    <script>
+        var localTime = new Date();
+		
+		var html ="<p>UTC Time is  " + localTime.toUTCString() + "</p>";
+		//UTC Time is    Tue, 25 Jul 2017 12:11:34 GMT
+		
+		html += "<p>Local Time is " + localTime.toLocaleString() + "</p>";
+		//Local Time is    25/07/2017, 22:11:34
+		
+		html += "<p>Time Zone Offset is " + localTime.getTimezoneOffset() + "</p>";
+		//Time Zone Offset is   -600
+		
+		html += "<p>Using toLocaleTimeString() gives: " + localTime.toLocaleTimeString() + "</p>";
+		//Using toLocaleTimeString() gives:      22:11:34
+		
+		html += "<p>Using toTimeString() gives: " + localTime.toTimeString() + "</p>";
+		//Using toTimeString() gives:        22:11:34 GMT+1000 (澳大利亚东部标准时间)
+		
+		html += "<p>Using toLocaleDateString() gives: " + localTime.toLocaleDateString() + "</p>";
+		//Using toLocaleDateString() gives:   25/07/2017
+		
+		html += "<p>Using toDateString() gives: " + localTime.toDateString() + "</p>";
+		//Using toDateString() gives:    Tue Jul 25 2017
+		
+		document.write(html);
+
+    
+    </script>
+
+</body>
+</html>
