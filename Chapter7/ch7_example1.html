@@ -6,7 +6,11 @@
 </head>
 
 <body>
+
+    <div id = "txt"></div> 
     <script>
+	
+	    function updateTime(){
         var localTime = new Date();
 		
 		var html ="<p>UTC Time is  " + localTime.toUTCString() + "</p>";
@@ -30,8 +34,11 @@
 		html += "<p>Using toDateString() gives: " + localTime.toDateString() + "</p>";
 		//Using toDateString() gives:    Tue Jul 25 2017
 		
-		document.write(html);
+		document.getElementById("txt").innerHTML=html;
+		
+		}
 
+		setInterval(updateTime,1000);
     
     </script>
 
